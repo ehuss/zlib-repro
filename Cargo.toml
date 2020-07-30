@@ -1,0 +1,13 @@
+[package]
+name = "zlib-repro"
+version = "0.1.0"
+authors = ["Eric Huss"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#git2 = {path="../../Proj/git2-rs", features=["vendored-openssl"]}
+#libgit2-sys = {path="../../Proj/git2-rs/libgit2-sys"}
+anyhow = "1.0.31"
+git2 = {version="0.13.7", features=["vendored-openssl"]}
